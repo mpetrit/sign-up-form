@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Norse;
+    src: url(assets/Norse-Bold.otf);
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F9FAFB;
+    height: 100vh;
+}
+
+.logo-section{
+    background-image: url("assets/images/background.jpg");
+    background-size:cover;
+    min-width: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.logo-section p{
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+.logo-section a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding:0;
+    position: relative;
+    top: 150px;
+}
+.logo img{
+    width: 120px;
+}
+.logo-title{
+    font-size: 7rem;
+    font-family: Norse;
+}
+
+
+.form-section{
+    margin-top:100px ;
+    width: 65%;
+}
+.form-text{
+    font-size: 1.5rem;
+    width: 70ch;
+    font-weight: bold;
+    padding-left:30px ;
+}
+form{
+    background-color: white;
+    box-shadow: 0 8px 8px #DDDEDE;
+    padding: 30px;
+    padding-left:30px ;
+    margin-bottom:20px ;
+}
+.input-container{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+.input-card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    text-transform:uppercase;
+}
+input{
+    line-height: 25px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px ;
+}
+input[type="password"]:invalid{
+    border: 1px solid rgb(139, 3, 3);
+}
+input:focus{
+    border: 2px solid rgb(0, 0, 150);
+    box-shadow: 1px 1px 5px rgb(0, 0, 150);
+}
+
+button[type="submit"]{
+    background-color: #596D48;
+    color: white;
+    padding: 15px 40px 15px 40px;
+    margin-left:30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+p.login-text{
+    margin-top: 30px ;
+    font-size: 1rem;
+    font-weight: 550;
+}
+.login-link{
+    text-decoration: none;
+    color: #596D48;
+}
